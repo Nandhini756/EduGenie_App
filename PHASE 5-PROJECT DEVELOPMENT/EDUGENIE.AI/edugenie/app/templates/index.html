@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduGenie — AI Tutor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Welcome to EduGenie 🧠✨</h1>
+      <p>Your personal AI tutor for learning support!</p>
+    </header>
+
+    <section class="card">
+      <h2>Ask EduGenie a Question</h2>
+      <form id="qaForm">
+        <input type="text" id="question" placeholder="Why is the sky blue?" required maxlength="4000">
+        <button type="submit">Get Answer</button>
+      </form>
+      <div id="qaResult" class="output" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Need an Explanation?</h2>
+      <form id="explainForm">
+        <input type="text" id="topic" placeholder="Photosynthesis" required maxlength="500">
+        <button type="submit">Explain</button>
+      </form>
+      <div id="explanationResult" class="output" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Summarize a Paragraph</h2>
+      <form id="summaryForm">
+        <textarea id="summaryText" placeholder="Paste long content to summarize" required maxlength="20000"></textarea>
+        <button type="submit">Summarize</button>
+      </form>
+      <div id="summaryResult" class="output" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Generate a Quiz</h2>
+      <form id="quizForm">
+        <textarea id="quizText" placeholder="Solar System" required maxlength="12000"></textarea>
+        <button type="submit">Generate Quiz</button>
+      </form>
+      <div id="quizResult" class="output" aria-live="polite"></div>
+    </section>
+
+    <section class="card">
+      <h2>Get Learning Recommendations</h2>
+      <form id="learnForm">
+        <input type="text" id="learnTopic" placeholder="e.g. Linear Regression" required maxlength="500">
+        <button type="submit">Get Recommendations</button>
+      </form>
+      <div id="learnResult" class="output" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
